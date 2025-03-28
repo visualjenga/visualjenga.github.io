@@ -27,7 +27,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/visual_jenga.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -44,26 +44,19 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">Visual Jenga: Discovering Object Dependencies via Counterfactual Inpainting</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://anandbhattad.github.io/">Anand Bhattad</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://konpat.notion.site/">Konpat Preechakul</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://people.eecs.berkeley.edu/~efros/">Alexei A. Efros</a><sup>2</sup>,
-            </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Toyota Technological Institute at Chicago,</span>
-            <span class="author-block"><sup>2</sup>University of California, Berkeley</span>
-          </div>
-
+          <div class="authors-grid">
+            <div class="author-name"><a href="https://anandbhattad.github.io/">Anand Bhattad</a></div>
+            <div class="author-name"><a href="https://konpat.notion.site/">Konpat Preechakul</a></div>
+            <div class="author-name"><a href="https://people.eecs.berkeley.edu/~efros/">Alexei A. Efros</a></div>
+            <div class="author-affil">TTI-Chicago</div>
+            <div class="author-affil" style="grid-column: span 2;">UC Berkeley</div>
+          </div>                  
+          <br>
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -147,41 +140,32 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
+        <h2 class="title is-4">Key Idea: Counterfactual Inpainting</h2>
+        <img src="./static/images/Inpainting.png" style="width: 100%; display: block; margin: 0 auto;" alt="Inpainting Results">
+        <figcaption style="font-size: 0.95em; color: #555; margin-top: 0.5em;">
+          We test how much two objects depend on each other by masking one at a time and using a large inpainting model to fill the missing region. The numbers show similarity between inpainted results and the original object. If replacements vary, the object is less likely to be a support. Here, the table consistently reappears, while the cat is replaced by many objects — suggesting the table supports the cat.   </div>
     </div>
+    
+    
 
 
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@article{bhattad2025VisualJenga,
+  author    = {Bhattad, Anand and Preechakul, Konpat and Efros, Alexei A.},
+  title     = {Visual Jenga: Discovering Object Dependencies via Counterfactual Inpainting},
+  journal   = {arXiv},
+  year      = {2025},
 }</code></pre>
   </div>
 </section>
 
 
   <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
@@ -191,17 +175,14 @@
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+           Website adapted from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
           </p>
         </div>
       </div>
     </div>
   </div>
-</footer> -->
+</footer> 
 
 </body>
 </html>

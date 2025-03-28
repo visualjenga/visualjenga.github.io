@@ -155,3 +155,26 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.authors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  row-gap: 0em;
+  column-gap: 0.25em;
+  justify-items: center;
+  align-items: center;
+}
+
+.author-name a {
+  font-weight: 500;
+  font-size: 1.5em;
+    color: #0099ff;
+  text-decoration: none;
+}
+
+.author-affil {
+  font-size: 1.5em;
+  color: #444;
+}
+
