@@ -50,7 +50,8 @@
             <div class="author-name"><a href="https://konpat.notion.site/">Konpat Preechakul</a></div>
             <div class="author-name"><a href="https://people.eecs.berkeley.edu/~efros/">Alexei A. Efros</a></div>
             <div class="author-affil">TTI-Chicago</div>
-            <div class="author-affil" style="grid-column: span 2;">UC Berkeley</div>
+            <div class="author-affil">UC Berkeley</div>
+            <div class="author-affil">UC Berkeley</div>
           </div>                  
           <br>
           <div class="column has-text-centered">
@@ -139,21 +140,25 @@
       </div>
     </div>
     <!--/ Abstract. -->
-
+<br>
+<br>
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-4">Key Idea: Counterfactual Inpainting</h2>
         <img src="./static/images/Inpainting.png" style="width: 100%; display: block; margin: 0 auto;" alt="Inpainting Results">
-        <figcaption style="font-size: 0.95em; color: #555; margin-top: 0.5em;">
+        <figcaption style="font-size: 0.95em; color: #555; margin-top: 0.5em; text-align: justify;">
           We test how much two objects depend on each other by masking one at a time and using a large inpainting model to fill the missing region. The numbers show similarity between inpainted results and the original object. If replacements vary, the object is less likely to be a support. Here, the table consistently reappears, while the cat is replaced by many objects — suggesting the table supports the cat.   </div>
     </div>
+
+    <br>
+    <br>
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-4">Our Pipeline</h2>
         <img src="./static/images/approach.png" style="width: 100%; display: block; margin: 0 auto;" alt="Inpainting Results">
-        <figcaption style="font-size: 0.95em; color: #555; margin-top: 0.5em;">
+        <figcaption style="font-size: 0.95em; color: #555; margin-top: 0.5em; text-align: justify;">
           Starting from an input image, we first detect object centers using Molmo. These points are used to segment each object with SAM. We then apply our Counterfactual Inpainting method to rank objects by their dependence, and finally remove them in order using Firefly.  </div>
     </div>
     
