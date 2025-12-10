@@ -58,7 +58,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2503.21770"
+                <a href="https://openreview.net/forum?id=yMXn86pzWx"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -156,9 +156,19 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-4">Key Idea: Counterfactual Inpainting</h2>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column">
         <img src="./static/images/Inpainting.png" style="width: 100%; display: block; margin: 0 auto;" alt="Inpainting Results">
+      </div>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
         <figcaption style="font-size: 0.95em; color: #555; margin-top: 0.5em; text-align: justify;">
-          We test how much two objects depend on each other by masking one at a time and using a large inpainting model to fill the missing region. The numbers show similarity between inpainted results and the original object. If replacements vary, the object is less likely to be a support. Here, the table consistently reappears, while the cat is replaced by many objects — suggesting the table supports the cat.   </div>
+          We test how much two objects depend on each other by masking one at a time and using a large inpainting model to fill the missing region. The numbers show similarity between inpainted results and the original object. If replacements vary, the object is less likely to be a support. Here, the table consistently reappears, while the cat is replaced by many objects — suggesting the table supports the cat.
+        </figcaption>
+      </div>
     </div>
 
     <br>
@@ -167,9 +177,19 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-4">Our Pipeline</h2>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column">
         <img src="./static/images/approach.png" style="width: 100%; display: block; margin: 0 auto;" alt="Inpainting Results">
+      </div>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
         <figcaption style="font-size: 0.95em; color: #555; margin-top: 0.5em; text-align: justify;">
-          Starting from an input image, we first detect object centers using Molmo. These points are used to segment each object with SAM. We then apply our Counterfactual Inpainting method to rank objects by their dependence, and finally remove them in order using Firefly.  </div>
+          Starting from an input image, we first detect object centers using Molmo. These points are used to segment each object with SAM. We then apply our Counterfactual Inpainting method to rank objects by their dependence, and finally remove them in order using Firefly.
+        </figcaption>
+      </div>
     </div>
     
     
